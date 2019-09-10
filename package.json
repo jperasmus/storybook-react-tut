@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -c .storybook",
+    "build-storybook": "build-storybook -c .storybook && cp -R public/font storybook-static && cp -R public/icon storybook-static",
     "chromatic": "chromatic test"
   },
   "eslintConfig": {
